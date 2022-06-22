@@ -1,0 +1,339 @@
+<!-- 
+Copyright (C) 2022 Marcus Huber (Xenorio)
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License along with this program. If not, see <https: //www.gnu.org/licenses />. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MixoVerse</title>
+
+    <script src="/api/proxy/jquery.min.js"></script>
+
+    <script src="/api/proxy/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <link href="/api/proxy/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/styles/main.css">
+
+    <script src="/api/proxy/font-awesome.min.js"
+        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="icon" type="image/png" href="/img/logo_small.png" />
+
+    <script src="/scripts/index.js"></script>
+
+</head>
+<body>
+
+    <div id="background">
+    </div>
+
+    <div id="header" class="container w-100 h-100">
+
+        <div class="row align-items-center h-100">
+            <div class="col-md-12">
+                <img src="/img/logo_large.png" alt="Logo">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="#join"><button class="btn btn-success"><i class="fa-solid fa-arrow-right-to-bracket"></i> Beitreten</button></a>
+                        <a href="/shop"><button class="btn btn-warning" style="margin-left: 1rem;"><i class="fa-solid fa-basket-shopping"></i> Shop</button></a>
+                        <a href="/regeln"><button class="btn btn-danger" style="margin-left: 1rem;"><i class="fa-solid fa-scroll"></i> Regeln</button></a>
+                        <a href="/eltern"><button class="btn btn-primary" style="margin-left: 1rem;"><i class="fa-solid fa-circle-info"></i> Informationen für Eltern</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="textbox">
+        <h1 style="color: yellow;">&Uuml;ber uns</h1>
+        <h3>
+            Fugiat elit incididunt voluptate exercitation minim ex velit reprehenderit. <br><br>
+            Minim aute ad excepteur proident minim anim nulla occaecat sint cupidatat incididunt minim. <br><br>
+            Laboris amet veniam aliquip sint officia incididunt. Id mollit enim laboris amet in velit non veniam voluptate adipisicing enim voluptate elit pariatur. <br><br>
+            Sint ex aute laborum tempor esse adipisicing ea eu non tempor pariatur duis. Adipisicing fugiat mollit esse officia culpa dolore ea Lorem ad ullamco laboris ipsum proident. <br><br>
+            Velit ipsum sit proident irure eu proident veniam officia in mollit nisi voluptate.
+        </h3>
+    </div>
+
+    <div class="textbox" id="join">
+        <h1 style="color: green;">Beitreten</h1>
+        <h2>
+            Java Edition
+        </h2>
+        <h3>
+            mixoverse.net:25565
+        </h3>
+        <br>
+        <h2>
+            Bedrock Edition
+        </h2>
+        <h3>
+            mixoverse.net:19132
+        </h3>
+    </div>
+
+    <div class="textbox" id="join">
+        <h1 style="color: blue;">Social Media</h1>
+        <div class="row" style="margin-top: 1rem;">
+            <div class="col-md-4">
+                <a href="https://discord.com/invite/C3PVqUA"><button class="btn btn-primary"><i class="fa-brands fa-discord"></i> Discord</button></a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://www.youtube.com/channel/UCQ6JfIrd_mSicJQYcak2x9A"><button class="btn btn-danger"><i class="fa-brands fa-youtube"></i> YouTube</button></a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://twitter.com/MixoVerse"><button class="btn btn-primary"><i class="fa-brands fa-twitter"></i> Twitter</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="textbox">
+
+        <h1 style="color: orange;">Gallerie</h1>
+
+        <div id="gallery" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#gallery" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#gallery" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#gallery" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/gallery/lobby.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/gallery/lobby2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/gallery/lobby3.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#gallery"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Zurück</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#gallery"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Vor</span>
+            </button>
+        </div>
+
+    </div>
+
+    <div class="textbox container" id="team">
+        <h1 style="color: cyan;">Das Team</h1>
+
+        <!-- Team Row 1 -->
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="card bg-dark" >
+                    <img src="" class="card-img-top team-card-image" teamid="137243673426526208">
+                    <div class="card-body">
+                        <h5 class="card-title">Xenorio</h5>
+                        <p class="card-text">Inhaber und Verwaltung</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card bg-dark" >
+                    <img src="" class="card-img-top team-card-image" teamid="254278394995277834">
+                    <div class="card-body">
+                        <h5 class="card-title">Mr. Clean</h5>
+                        <p class="card-text">Gründer, Technik/Entwicklung</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card bg-dark" >
+                    <img src="" class="card-img-top team-card-image" teamid="671597267962167317">
+                    <div class="card-body">
+                        <h5 class="card-title">MaddinD85</h5>
+                        <p class="card-text">Admin</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card bg-dark" >
+                    <img src="" class="card-img-top team-card-image" teamid="292324165133008897">
+                    <div class="card-body">
+                        <h5 class="card-title">Schulziii</h5>
+                        <p class="card-text">Admin</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Team Row 2 -->
+        <div class="row">
+        
+            <div class="col-md-3">
+                <div class="card bg-dark" >
+                    <img src="" class="card-img-top team-card-image" teamid="631958774055174158">
+                    <div class="card-body">
+                        <h5 class="card-title">Chr1s388</h5>
+                        <p class="card-text">Admin</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-3">
+                <div class="card bg-dark" >
+                    <img src="" class="card-img-top team-card-image" teamid="394479030247751680">
+                    <div class="card-body">
+                        <h5 class="card-title">Ali</h5>
+                        <p class="card-text">Entwickler</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-3">
+                <div class="card bg-dark" >
+                    <img src="" class="card-img-top team-card-image" teamid="282589147581906945">
+                    <div class="card-body">
+                        <h5 class="card-title">Ange</h5>
+                        <p class="card-text">Entwickler</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-3">
+                <div class="card bg-dark" >
+                    <img src="" class="card-img-top team-card-image" teamid="660035994690519040">
+                    <div class="card-body">
+                        <h5 class="card-title">SirLinie</h5>
+                        <p class="card-text">Moderator</p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+        <!-- Team Row 3 -->
+        <div class="row">
+        
+            <div class="col-md-3">
+                <div class="card bg-dark" >
+                    <img src="" class="card-img-top team-card-image" teamid="801036544277348353">
+                    <div class="card-body">
+                        <h5 class="card-title">BossAnge</h5>
+                        <p class="card-text">Support</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-3">
+                <div class="card bg-dark" >
+                    <img src="" class="card-img-top team-card-image" teamid="802646238721212457">
+                    <div class="card-body">
+                        <h5 class="card-title">Isa</h5>
+                        <p class="card-text">Support</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-3">
+                <div class="card bg-dark" >
+                    <img src="" class="card-img-top team-card-image" teamid="659769207826808871">
+                    <div class="card-body">
+                        <h5 class="card-title">Neylc</h5>
+                        <p class="card-text">Jr. Support</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-3">
+                <div class="card bg-dark" >
+                    <img src="" class="card-img-top team-card-image" teamid="594209154261057537">
+                    <div class="card-body">
+                        <h5 class="card-title">Marcinimini</h5>
+                        <p class="card-text">Jr. Support</p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+        <!-- Team Row 4 -->
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="card bg-dark" >
+                    <img src="" class="card-img-top team-card-image" teamid="451372353666940928">
+                    <div class="card-body">
+                        <h5 class="card-title">WarrantChalk867</h5>
+                        <p class="card-text">Jr. Support</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-3">
+                <div class="card bg-dark" >
+                    <img src="" class="card-img-top team-card-image" teamid="488008328035696641">
+                    <div class="card-body">
+                        <h5 class="card-title">Darkcute2103</h5>
+                        <p class="card-text">Builder</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="card bg-dark" >
+                    <img src="" class="card-img-top team-card-image" teamid="843148090415251456">
+                    <div class="card-body">
+                        <h5 class="card-title">TronBuilder</h5>
+                        <p class="card-text">Builder</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card bg-dark" >
+                    <img src="" class="card-img-top team-card-image" teamid="219758415487041537">
+                    <div class="card-body">
+                        <h5 class="card-title">NeverDone</h5>
+                        <p class="card-text">Design</p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <div class="textbox">
+        <h1 style="color: purple;">Rechtliches</h1>
+        <a href="/impressum"><button class="btn btn-danger" style="margin-left: 1rem;"><i class="fa-solid fa-scroll"></i> Impressum</button></a>
+        <a href="/agb"><button class="btn btn-danger" style="margin-left: 1rem;"><i class="fa-solid fa-scroll"></i> AGB</button></a>
+    </div>
+
+</body>
+</html>

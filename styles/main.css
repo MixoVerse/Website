@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'Fredoka One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/api/proxy/fredoka_one.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'VT323';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/api/proxy/vt323.ttf) format('truetype');
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  height: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  text-align: center;
+  color: white;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-image: url("/img/bg-gradient.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  font-family: "VT323", monospace;
+}
+
+#background {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-image: url("/img/lobby.png");
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#background img {
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+
+#header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header img {
+  width: 75%;
+}
+
+.textbox {
+  background: #181a1b;
+  width: 75%;
+  display: inline-block;
+  padding: 2rem;
+  border-radius: 25px;
+  margin-bottom: 3rem;
+}
+
+.textbox h1 {
+  font-family: "Fredoka One", cursive;
+}
+
+#back-button {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+#team .row {
+  margin-top: 2rem;
+}
+
+#header button {
+  margin-top: 1rem;
+}

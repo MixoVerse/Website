@@ -1,0 +1,127 @@
+<!-- 
+Copyright (C) 2022 Marcus Huber (Xenorio)
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License along with this program. If not, see <https: //www.gnu.org/licenses />. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MixoVerse | Shop</title>
+
+    <script src="/api/proxy/jquery.min.js"></script>
+
+    <script src="/api/proxy/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <link href="/api/proxy/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/styles/main.css">
+
+    <script src="/api/proxy/font-awesome.min.js"
+        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="/scripts/shop.js"></script>
+    <link rel="stylesheet" href="/styles/shop.css">
+
+    <link rel="icon" type="image/png" href="/img/logo_small.png" />
+
+</head>
+
+<body>
+
+    <div id="background">
+    </div>
+
+    <div id="back-button">
+        <a href="/"><button class="btn btn-warning"><i class="fa-solid fa-arrow-left"></i></button></a>
+    </div>
+
+    <div class="textbox" style="margin-top: 3rem;">
+        <h1 style="color: orange;">Shop</h1>
+
+        <span style="display: none; color: red;" id="error">
+        </span>
+
+        <div id="shop-username-form">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input id="shop-username" type="text" class="form-control" placeholder="Minecraft Benutzername"
+                    aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+
+            <button class="btn btn-primary mb-3" onclick="loadShop()">Bestätigen</button>
+        </div>
+
+        <div id="shop" style="display: none;">
+
+            <h4 style="margin-bottom: 1rem;">
+                <input class="form-check-input" type="checkbox" value="" id="agb-checkbox">
+                <label class="form-check-label" for="agb-checkbox">
+                    Ich habe die <a href="/agb" target="_blank">AGB</a> gelesen, verstanden, und akzeptiere sie. (Es ist wirklich nicht
+                    viel, lies sie lieber!)
+                </label>
+            </h4>
+
+            <a href="/ranks" target="_blank"><button class="btn btn-primary"><i class="fa-solid fa-scroll"></i> Rangübersicht</button></a>
+
+            <h3 style="margin-top: 1rem;">
+                <table class="table">
+                    <tbody id="table-body"></tbody>
+                </table>
+            </h3>
+
+            <div id="donate">
+                <h2>Spende:</h2>
+                <div class="input-group mb-3">
+                    <input id="shop-donate" type="number" class="form-control" aria-label="Amount"
+                        aria-describedby="basic-addon1">
+                    <span class="input-group-text" id="basic-addon1">€</span>
+                </div>
+            
+                <button class="btn btn-primary mb-3" onclick="donate()"><i class="fa-solid fa-gift"></i> Spenden</button>
+            </div>
+
+        </div>
+
+        
+
+    </div>
+
+
+    <div class="modal fade" id="contentModal" tabindex="-1" aria-labelledby="contentModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contentModalLabel">Inhalt von <span id="modal-title-product"></span>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul id="modal-content-list">
+
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
