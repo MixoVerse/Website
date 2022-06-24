@@ -16,7 +16,7 @@ $(document).ready(() => {
 
         if (!img.attr('teamid')) return
 
-        img.attr('src', `/api/discordimage?id=${img.attr('teamid')}`)
+        img.attr('src', `https://api.mixoverse.net/discordimage?id=${img.attr('teamid')}`)
 
     });
 

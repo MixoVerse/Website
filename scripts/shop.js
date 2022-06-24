@@ -12,7 +12,7 @@ let products;
 let username;
 let owned;
 
-$.getJSON('/api/products', (data) => {
+$.getJSON('https://api.mixoverse.net/products', (data) => {
     products = data
 })
 
@@ -79,7 +79,7 @@ function loadShop() {
 
     username = $('#shop-username').val()
 
-    $.getJSON('/api/userinfo?username=' + username, data => {
+    $.getJSON('https://api.mixoverse.net/userinfo?username=' + username, data => {
 
         if (data.error) {
             showError(data.error)
@@ -127,7 +127,7 @@ function order(name) {
         return
     }
 
-    $.getJSON(`/api/prepareorder?username=${username}&product=${product.id}`, data => {
+    $.getJSON(`https://api.mixoverse.net/prepareorder?username=${username}&product=${product.id}`, data => {
 
         if (data.error) {
             showError(data.error)
@@ -159,7 +159,7 @@ function donate() {
         return
     }
 
-    $.getJSON(`/api/preparedonation?username=${username}&amount=${amount}`, data => {
+    $.getJSON(`https://api.mixoverse.net/preparedonation?username=${username}&amount=${amount}`, data => {
 
         if (data.error) {
             showError(data.error)

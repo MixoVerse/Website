@@ -10,7 +10,7 @@
 
 $(document).ready(() => {
 
-    $.getJSON('/api/products', (data) => {
+    $.getJSON('https://api.mixoverse.net/products', (data) => {
         let products = data
 
         let head = ""
