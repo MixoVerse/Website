@@ -86,6 +86,8 @@ function loadShop() {
             return
         }
 
+        $('#error').hide()
+
         owned = data.owned
 
         loadTable()
