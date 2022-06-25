@@ -98,6 +98,7 @@ function loadShop() {
 
         owned = data.owned
 
+        $('#username-display').text(username)
         loadTable()
 
         $('#shop-username-form').hide()
