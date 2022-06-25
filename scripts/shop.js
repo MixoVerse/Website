@@ -18,6 +18,14 @@ $.getJSON('https://api.mixoverse.net/products', (data) => {
 
 $(document).ready(() => {
     $('#agb-checkbox').prop('checked', false);
+
+    $('#shop-username').keypress(event => {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            $('#username-submit').click()
+        }
+    })
+
 })
 
 function showError(error) {
