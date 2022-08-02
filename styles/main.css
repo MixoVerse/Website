@@ -96,3 +96,13 @@ body {
   margin-top: 1rem;
 }
 
+@media screen and (max-width: 480px) {
+  .textbox {
+    width: 100%;
+  }
+
+  #back-button {
+    display: none;
+  }
+}
+
