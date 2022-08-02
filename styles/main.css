@@ -104,5 +104,9 @@ body {
   #back-button {
     display: none;
   }
+
+  #socials,#legal button {
+    margin-bottom: 1rem;
+  }
 }
 
