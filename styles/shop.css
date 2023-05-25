@@ -1,3 +1,17 @@
 td {
     color: white;
 }
+
+img {
+    max-width: 50%;
+}
+
+.textbox {
+    font-size: larger;
+}
+
+@media screen and (max-width: 600px) {
+    img {
+        max-width: 100%;
+    }
+  }
