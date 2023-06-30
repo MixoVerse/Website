@@ -3,14 +3,14 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://api.mixoverse.net/proxy/fredoka_one.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/fredokaone/v13/k3kUo8kEI-tA1RRcTZGmTmHB.ttf) format('truetype');
 }
 @font-face {
   font-family: 'VT323';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://api.mixoverse.net/proxy/vt323.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/vt323/v17/pxiKyp0ihIEF2hsY.ttf) format('truetype');
 }
 
 html,
